@@ -21,10 +21,12 @@ public class ArticleRestController {
         return articleService.getAllArticle();
     }
     @GetMapping("/article/{id}")
+    @Operation(summary = "Détail d'un article")
     public ReponseCode<Article> getId(@PathVariable("id") Long id) {
         return articleService.getArticle(id);
     }
     @PostMapping("/save-article")
+    @Operation(summary = "Création ou modification d'un article")
     public ReponseCode<Article> save(@RequestBody Article article){
 
             return articleService.save(article);
@@ -32,6 +34,7 @@ public class ArticleRestController {
 
     }
     @DeleteMapping("suppr-article/{id}")
+    @Operation(summary = "Suppression d'un article grace à son id")
     public ReponseCode<Boolean> deleteArticle(@PathVariable("id") long id){
 
            return articleService.delete(id);

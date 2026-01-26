@@ -3,7 +3,7 @@
 Cette API à été créer lors d'un TP durant un cours de Java. Nous devions créer une API pouvant envoyer la liste de tout les articles, renvoyer un article précis, modifier pu créer un article et supprimer un article. Également on devais mettre en place un code et un message traduit lors de l'envoyes des données. Pour finir nous avons du ajouter swagger pour une meilleur visualisation des methods.
 
 ## Architecture du projet
-
+```
 |
 |----> Bo =  contient classe Article et la classe de la reponse avec code et message
 |
@@ -12,7 +12,7 @@ Cette API à été créer lors d'un TP durant un cours de Java. Nous devions cr�
 |----> Local = contient la configuration local 
 |
 |----> Rest = contient le controller et le service Article
-
+```
 
 ## Configuration avant lancement
 
@@ -44,3 +44,4 @@ Pour connaitre la struturation des méthods et leur données après avoir lancer
 ```
 http://localhost:8080/swagger-ui/index.html
 ```
+
